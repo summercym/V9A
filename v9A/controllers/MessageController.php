@@ -16,12 +16,8 @@ use yii\data\Pagination;
 use app\models\Message;
 
 Class MessageController extends Controller{
-   public $layout='nav2.php';
+   public $layout='common.php';
     public $enableCsrfValidation = false;
-    /****未开发页面提示******/
-    public function actionCommon(){
-        return $this->render("common");
-    }
     /*文字回复*/
     public function actionContent(){
         $request=Yii::$app->request;
@@ -30,7 +26,19 @@ Class MessageController extends Controller{
         $session = Yii::$app->session;
         $session->open();
         if(empty($re)){
-           return $this->render("demo");
+            $query = Message::find();
+            $pagination = new Pagination([
+                'defaultPageSize' => 3,
+                'totalCount' => $query->count(),
+            ]);
+            $countries = $query->orderBy('message_id')
+                ->offset($pagination->offset)
+                ->limit($pagination->limit)
+                ->all();
+            return $this->render('demo', [
+                'arr' => $countries,
+                'pagination' => $pagination,
+            ]);
         }else{
             $number_id=$session->get('number_id');
             $message_title=$request->post("message_title");
@@ -73,7 +81,6 @@ Class MessageController extends Controller{
         $re=$connection->createCommand("SELECT * FROM message WHERE message_id=$id")->queryOne();
         return $this->render("upd",['re'=>$re]);
     }
-
     public function actionUpdate(){
         $request = Yii::$app->request;
         $connection = \Yii::$app->db;

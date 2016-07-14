@@ -3,9 +3,9 @@ namespace app\controllers;
 use yii\caching\MemCache;
 use yii\web\Controller;
 
-class MenuController extends Controller
-{
-	 public $enableCsrfValidation = false;
+class MenuController extends Controller{
+    public $layout='common.php';
+	public $enableCsrfValidation = false;
     public function actionIndex(){
         return $this->renderPartial("form");
     }

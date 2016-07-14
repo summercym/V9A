@@ -56,9 +56,9 @@
                         </li>
                         <li><a href="index.php?r=num/show">管理公众号</a>
                         </li>
-                        <li><a href="index_3.html">自定义回复</a>
+                        <li><a href="index.php?r=message/content">消息回复</a>
                         </li>
-                        <li><a href="index_4.html">自定义菜单</a>
+                        <li><a href="index.php?r=menu/index">自定义菜单</a>
                         </li>
                     </ul>
                 </li>

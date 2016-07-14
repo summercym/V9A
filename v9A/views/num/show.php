@@ -1,16 +1,16 @@
 ﻿<div class="ibox-content p-xl">
 
     <div class="table-responsive m-t">
-        <table class="table invoice-table">
+        <table class="table invoice-table" >
             <thead>
-            <tr>
-                <th>名称</th>
-                <th>类型</th>
-                <th>appid</th>
-                <th>appsecret</th>
-                <th>token</th>
-                <th >url</th>
-                <th>操作</th>
+            <tr style="text-align: center">
+                <th style="text-align: center">名称</th>
+                <th style="text-align: center">类型</th>
+                <th style="text-align: center">appid</th>
+                <th style="text-align: center">appsecret</th>
+                <th style="text-align: center">token</th>
+                <th style="text-align: center">url</th>
+                <th style="text-align: center">操作</th>
             </tr>
             </thead>
             <?php foreach($list as  $k=>$v) {?>

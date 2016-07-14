@@ -3,22 +3,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=8">
 
-<title>微擎 - 微信公众平台自助引擎 -  Powered by WE7.CC</title>
-<meta name="keywords" content="微擎,微信,微信公众平台">
-<meta name="description" content="微信公众平台自助引擎，简称微擎，微擎是一款免费开源的微信公众平台管理系统。">
-<link type="text/css" rel="stylesheet" href="menu/bootstrap.css">
-<link type="text/css" rel="stylesheet" href="menu/font-awesome.css">
-<link type="text/css" rel="stylesheet" href="menu/common(1).css">
-<script type="text/javascript" src="menu/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="menu/bootstrap.js"></script>
-<script type="text/javascript" src="menu/common(2).js"></script>
-<script type="text/javascript" src="menu/emotions.js"></script>
+<title> V9A </title>
+<link type="text/css" rel="stylesheet" href="./menu/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="./menu/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="./menu/common(1).css">
+<script type="text/javascript" src="./menu/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./menu/bootstrap.js"></script>
+<script type="text/javascript" src="./menu/common(2).js"></script>
+<script type="text/javascript" src="./menu/emotions.js"></script>
 <script type="text/javascript">
 cookie.prefix = '6e34_';
 </script>
 </head>
-<body>
-<script type="text/javascript" src="menu/jquery-ui-1.10.3.min.js"></script>
+<body style="background-color: #f3f3f4; ">
+<script type="text/javascript" src="./menu/jquery-ui-1.10.3.min.js"></script>
 <script type="text/javascript">
     var pIndex = 1;
     var currentEntity = null;
@@ -196,7 +194,7 @@ cookie.prefix = '6e34_';
         dat = dat.slice(0,-1);
         dat += ']';
         var json='{"button":'+dat+"}";
-        $.post("index.php?r=menu/addll",{json:json},function(date){
+        $.post("index.php?r=./menu/addll",{json:json},function(date){
             alert(date)
         })
         return false;
@@ -210,8 +208,8 @@ cookie.prefix = '6e34_';
     a:hover, a:active{text-decoration:none; color:red;}
     .hover td{padding-left:10px;}
 </style>
-<div class="main">
-    <div class="form form-horizontal">
+<div class="main" style="margin-top: 20px;">
+    <div class="form form-horizontal" style="background-color:#f3f3f4; " >
         <h4>菜单设计器 <small>编辑和设置微信公众号码, 必须是服务号才能编辑自定义菜单。</small></h4>
         <table class="tb table-striped">
             <tbody class="mlist ui-sortable">
@@ -225,10 +223,16 @@ cookie.prefix = '6e34_';
                             <a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign"></a>
                         </div>
                         <div class="smlist ui-sortable">
-                                                    </div>
+                            <div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="view" data-url="http://v.qq.com/" data-forward="">
+                                <input type="text" class="span3" value="视频"> &nbsp; &nbsp;
+                                <a href="javascript:;" class="icon-move" title="拖动调整此菜单位置"></a> &nbsp;
+                                <a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit" title="设置此菜单动作"></a> &nbsp;
+                                <a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"></a>
+                            </div>
+                        </div>
                     </td>
                 </tr>
-                        <tr class="hover" data-do="view" data-url="" data-forward="">
+                <tr class="hover" data-do="view" data-url="" data-forward="">
                     <td>
                         <div>
                             <input type="text" class="span4" value="菜单"> &nbsp; &nbsp;
@@ -238,33 +242,20 @@ cookie.prefix = '6e34_';
                             <a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign"></a>
                         </div>
                         <div class="smlist ui-sortable">
-                                                                                    <div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="view" data-url="https://www.baidu.com/" data-forward="">
+                             <div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="view" data-url="https://www.baidu.com/" data-forward="">
                                 <input type="text" class="span3" value="搜索"> &nbsp; &nbsp;
                                 <a href="javascript:;" class="icon-move" title="拖动调整此菜单位置"></a> &nbsp;
                                 <a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit" title="设置此菜单动作"></a> &nbsp;
                                 <a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"></a>
                             </div>
-                                                        <div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="view" data-url="http://v.qq.com/" data-forward="">
-                                <input type="text" class="span3" value="视频"> &nbsp; &nbsp;
-                                <a href="javascript:;" class="icon-move" title="拖动调整此菜单位置"></a> &nbsp;
-                                <a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit" title="设置此菜单动作"></a> &nbsp;
-                                <a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"></a>
-                            </div>
-                                                        <div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="forward" data-url="" data-forward="V1001_GOOD">
-                                <input type="text" class="span3" value="赞一下我们"> &nbsp; &nbsp;
-                                <a href="javascript:;" class="icon-move" title="拖动调整此菜单位置"></a> &nbsp;
-                                <a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit" title="设置此菜单动作"></a> &nbsp;
-                                <a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"></a>
-                            </div>
-                                                                                </div>
+                         </div>
                     </td>
                 </tr>
-                                    </tbody>
+                </tbody>
         </table>
         <div class="well well-small" style="margin-top:20px;">
             <a href="javascript:;" onclick="addMenu();">添加菜单 <i class="icon-plus-sign" title="添加菜单"></i></a> &nbsp; &nbsp; &nbsp;  <span class="help-inline">可以使用 <i class="icon-move"></i> 进行拖动排序</span>
         </div>
-
         <h4>操作 <small>设计好菜单后再进行保存操作</small></h4>
         <table class="tb">
             <tbody>

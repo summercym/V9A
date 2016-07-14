@@ -25,7 +25,7 @@
 		  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body style="background-color:#28b0e4;">
+	<body style="background-color: rgba(54, 21, 55, 0.93);">
 		<div class="container">
 			<div class="header" style="margin:15px auto;">
 

@@ -72,11 +72,11 @@ $(document).ready(function () {
             //        }
             //    })
 
-    $(window).bind("load resize click scroll", function() {
+   /* $(window).bind("load resize click scroll", function() {
         if(!$("body").hasClass('body-small')) {
             fix_height();
         }
-    })
+    })*/
 
     $("[data-toggle=popover]")
         .popover();

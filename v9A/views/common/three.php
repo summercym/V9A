@@ -10,7 +10,7 @@
 		
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>安装系统 - 微擎 - 公众平台自助开源引擎</title>
+		<title>安装系统 - V9A - 公众平台自助开源引擎</title>
 		<link rel="stylesheet" href="./style/css/bootstrap.min.css">
 		<style>
 			html,body{font-size:13px;font-family:"Microsoft YaHei UI", "微软雅黑", "宋体";}
@@ -25,7 +25,7 @@
 		  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body style="background-color:#28b0e4;">
+	<body style="background-color: rgba(54, 21, 55, 0.93);">
 		<div class="container">
 			<div class="header" style="margin:15px auto;">
 
@@ -167,10 +167,10 @@
 			</div>
 			<div class="footer" style="margin:15px auto;">
 				<div class="text-center">
-					<a href="http://www.we7.cc/">关于微擎</a> &nbsp; &nbsp; <a href="http://bbs.we7.cc/">微擎帮助</a> &nbsp; &nbsp; <a href="http://www.we7.cc/">购买授权</a>
+					<a href="http://www.we7.cc/">关于V9A</a> &nbsp; &nbsp; <a href="http://bbs.we7.cc/">V9A帮助</a> &nbsp; &nbsp; <a href="http://www.we7.cc/">购买授权</a>
 				</div>
 				<div class="text-center">
-					Powered by <a href="http://www.we7.cc/"><b>微擎</b></a> v0.7 © 2014 <a href="http://www.we7.cc/">www.we7.cc</a>
+					Powered by <a href="http://www.we7.cc/"><b>V9A</b></a> v0.7 © 2014 <a href="http://www.we7.cc/">www.we7.cc</a>
 				</div>
 			</div>
 		</div>
