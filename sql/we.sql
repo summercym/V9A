@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50547
 File Encoding         : 65001
 
-Date: 2016-07-13 16:00:56
+Date: 2016-07-17 21:54:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -59,6 +59,17 @@ CREATE TABLE `numbers` (
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Table structure for session
+-- ----------------------------
+DROP TABLE IF EXISTS `session`;
+CREATE TABLE `session` (
+  `id` char(40) NOT NULL,
+  `expire` int(11) DEFAULT NULL,
+  `data` blob,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
@@ -69,4 +80,4 @@ CREATE TABLE `user` (
   `psw` varchar(255) DEFAULT NULL,
   `number_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=gbk;
